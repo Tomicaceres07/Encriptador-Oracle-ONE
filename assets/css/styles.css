@@ -4,6 +4,10 @@ body {
     min-height: 100vh;
 }
 
+.hidden {
+    display: none;
+}
+
 /* Main */
 #logo {
     width: 1.5em;

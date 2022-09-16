@@ -20,6 +20,8 @@
                         <img id="logo" src="./assets/images/Logo.png" alt="Logo">
                     </div>
                     <div>
+                        <!-- <input id="textarea" class="w-100 mt-4 bg-transparent border-0" placeholder="Ingrese el texto aqui" type="text"> -->
+                        <p id="paragraph-error" class="text-danger m-0"></p>
                         <textarea id="textarea" name="textarea" class="w-100 mt-4 bg-transparent border-0" placeholder="Ingrese el texto aqui"></textarea>
                     </div>
                     <div>
@@ -29,7 +31,7 @@
                     </div>
                     <div id="buttons-container">
                         <div>
-                            <button id="button-encrypt" class="btn button">Encriptar</button>
+                            <button id="button-encrypt" class="btn button" onclick="encrypt()">Encriptar</button>
                         </div>
                         <div>
                             <button id="button-decrypt" class="btn button">Desencriptar</button>
@@ -38,9 +40,14 @@
                 </div>
                 <div class="col-12 col-lg-4">
                     <div id="message-container">
-                        <img id="dummy" src="./assets/images/Dummy.png" alt="Dummy">
-                        <h4 id="title-message">Ningún mensaje fue encontrado</h4>
-                        <p id="paragraph-message">Ingresa el texto que desees encriptar o desencriptar.</p>
+                        <div id="no-message-div">
+                            <img id="dummy" src="./assets/images/Dummy.png" alt="Dummy">
+                            <h4 id="title-message">Ningún mensaje fue encontrado</h4>
+                            <p id="paragraph-message">Ingresa el texto que desees encriptar o desencriptar.</p>
+                        </div>
+                        <div id="message-div" class="hidden">
+                            <p id="paragraph-text"></p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -49,5 +56,6 @@
     <footer id="footer" class="container-fluid bg-dark text-white">
             <p id="footer-paragraph" class="m-0 p-2">Desarrollado por Tomás Caceres 2022</p>
     </footer>
+    <script src="./js/script.js"></script>
 </body>
 </html>

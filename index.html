@@ -34,12 +34,12 @@
                             <button id="button-encrypt" class="btn button" onclick="encrypt()">Encriptar</button>
                         </div>
                         <div>
-                            <button id="button-decrypt" class="btn button">Desencriptar</button>
+                            <button id="button-decrypt" class="btn button" onclick="decrypt()">Desencriptar</button>
                         </div>
                     </div>
                 </div>
                 <div class="col-12 col-lg-4">
-                    <div id="message-container">
+                    <div id="message-container" class="justify-content-center">
                         <div id="no-message-div">
                             <img id="dummy" src="./assets/images/Dummy.png" alt="Dummy">
                             <h4 id="title-message">Ningún mensaje fue encontrado</h4>
@@ -47,6 +47,7 @@
                         </div>
                         <div id="message-div" class="hidden">
                             <p id="paragraph-text"></p>
+                            <button id="button-copy" class="btn button button-copy mt-auto" onclick="copy()">Copiar</button>
                         </div>
                     </div>
                 </div>

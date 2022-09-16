@@ -54,7 +54,7 @@ body {
     font-size: 16px;
     height: 50px;
     margin-top: 1em;
-    width:  15em;
+    width:  12em;
 }
 
 #button-encrypt {
@@ -62,10 +62,30 @@ body {
     color: white;
 }
 
-#button-decrypt {
+#button-decrypt,
+.button-copy {
     border: 1px solid #0A3871;
     color: #0A3871;
 }
+
+#button-decrypt:hover,
+.button-copy:hover {
+    background-color: #0A3871;
+    border: 1px solid #0A3871;
+    color: white;
+}
+
+.button-copy {
+    width: 100%;
+}
+
+.button-copy:focus {
+    background-color: green;
+    border: 1px solid green;
+    color: white;
+}
+
+
 
 #message-container {
     background-color: white;
@@ -75,6 +95,13 @@ body {
     margin-top: 2em;
     padding: 1.5em;
     text-align: center;
+}
+
+.message-div {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
 }
 
 #dummy {
@@ -109,7 +136,6 @@ body {
 }
 
 @media(min-width: 992px) {
-
     #textarea {
         height: 18em;
     }
@@ -118,7 +144,7 @@ body {
         align-items: center;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        /* justify-content: center; */
         width: 90%;
     }
 

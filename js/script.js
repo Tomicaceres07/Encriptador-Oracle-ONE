@@ -78,10 +78,3 @@ function copy() {
     navigator.clipboard.writeText(paragraphText.textContent)
     paragraphText.value = "";
 }
-
-/* document.getElementById('button-copy').onclick = (e) => {
-    e.preventDefault();
-    const paragraphText = document.querySelector("#paragraph-text");
-    navigator.clipboard.writeText(paragraphText.textContent)
-    paragraphText.value = "";
-} */
